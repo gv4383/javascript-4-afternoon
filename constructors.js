@@ -57,11 +57,12 @@ mustang.moveCar(); // Increments mustang' move property by 10. Returns the new m
   You'll also need to use the 'this' keyword properly in order to make sure you're invoking moveCar on the right object (prius vs mustang).
 */
 
-// function Car(make, model, year) {
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-
-// }
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.move = 0;
+  this.moveCar = () => this.move += 10;
+}
 
 
